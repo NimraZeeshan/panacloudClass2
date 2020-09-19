@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 12
       - name: install Scoop
-        run: Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+        run: iwr -useb get.scoop.sh | iex
       - name: install yarn
         run: scoop install yarn
       - name: Build React App

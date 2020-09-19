@@ -15,4 +15,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./build  class2React.surge.sh --token ${{ secrets.SURGETOKEN }}
+        run: surge C:\Users\stude\Desktop\panacloudClass2\class2\build  class2React.surge.sh --token ${{ secrets.SURGETOKEN }}

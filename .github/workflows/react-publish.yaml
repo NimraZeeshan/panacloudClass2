@@ -12,8 +12,6 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
-      - name: install Scoop
-        run: iwr -useb get.scoop.sh | iex
       - name: install yarn
         run: scoop install yarn
       - name: Build React App
